@@ -1,0 +1,168 @@
+.wrapper {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 150px 0;
+    background: #181E41;
+
+    @media (max-width:650px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    img {
+        width: 400px;
+        height: 400px;
+        border: 1px solid purple;
+        border-radius: 20px;
+
+        @media (max-width:1100px) {
+            width: 350px;
+            height: 350px;
+        }
+
+        @media (max-width:900px) {
+            width: 300px;
+            height: 300px;
+        }
+
+        @media (max-width:650px) {
+            display: none;
+        }
+    }
+
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+
+    @media (max-width:1100px) {
+        max-width: 400px;
+    }
+
+    @media (max-width:900px) {
+        max-width: 300px;
+    }
+
+    @media (max-width:650px) {
+        max-width: 420px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width:450px) {
+        max-width: 320px;
+    }
+
+    h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        color: #FFFFFF;
+
+        @media (max-width:900px) {
+            font-size: 28px;
+        }
+
+        @media (max-width:650px) {
+            font-size: 30px;
+        }
+
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 180%;
+        color: rgba(255, 255, 255, 0.5);
+
+        @media (max-width:900px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.btn_wrapper {
+    margin-top: 30px;
+
+    .explore {
+        width: 160px;
+        height: 50px;
+        background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+
+        @media (max-width:900px) {
+            width: 140px;
+        }
+
+
+        &:hover {
+            cursor: pointer;
+            color: purple;
+            background: white;
+        }
+
+    }
+
+    .sell {
+        margin-left: 20px;
+        width: 120px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+
+        @media (max-width:900px) {
+            width: 100px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: white;
+            background: purple;
+        }
+    }
+}
+
+.statistics {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .stat {
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: left;
+            color: white;
+
+            @media (max-width:900px) {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.5);
+
+            @media (max-width:900px) {
+                font-size: 18px;
+            }
+        }
+    }
+
+}

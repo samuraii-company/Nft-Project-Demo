@@ -1,0 +1,118 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #001A33;
+    width: 250px;
+    z-index: 16;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    transition: transform 0.5s;
+    transform: translateX(100%);
+    z-index: 3;
+
+    li {
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            padding-left: 10px;
+
+        }
+
+        &:hover {
+            background: #091223;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+.wrapper_active {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    z-index: 16;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    transition: transform 0.5s;
+    transform: translateX(0);
+    background: #001A33;
+    z-index: 3;
+
+    svg {
+        background: none;
+    }
+
+
+    li {
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        background: none;
+
+
+        a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            padding-left: 10px;
+            background: none;
+
+        }
+
+        &:hover {
+            background: #091223;
+            border-radius: 10px;
+        }
+    }
+}
+
+.closebtn {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    background: none;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+
+    a {
+        color: white;
+        padding: 0 10px;
+        font-size: 30px;
+        background: none;
+
+
+
+        &:hover {
+            color: purple;
+            cursor: pointer;
+        }
+    }
+}
